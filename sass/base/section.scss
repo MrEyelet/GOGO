@@ -3,4 +3,8 @@
   padding-top: 5rem;
   padding-bottom: 6rem;
   text-align: center;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
 }

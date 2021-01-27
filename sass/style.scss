@@ -1,7 +1,7 @@
 /*MIXINS*/
-@import "mixins/wrapper";
 @import "mixins/resp-img";
 @import "mixins/breakpoints";
+@import "mixins/wrapper";
 
 /*FUNCTIONS*/
 @import "functions/vw";
@@ -14,3 +14,4 @@
 
 /* BEM Blocks */
 @import "components/header";
+@import "components/box";
