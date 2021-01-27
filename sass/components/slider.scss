@@ -1,0 +1,16 @@
+.slider {
+  position: relative;
+  &__navigation {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .swiper-button-prev {
+    left: -5rem;
+  }
+  .swiper-button-next {
+    right: -5rem;
+  }
+}

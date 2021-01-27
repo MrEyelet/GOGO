@@ -11,7 +11,7 @@ class Slider {
       direction: "horizontal",
       loop: true,
       // slidesPerView: 3,
-      spaceBetween: 15,
+      spaceBetween: 30,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
