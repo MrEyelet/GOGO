@@ -2,6 +2,22 @@
   width: calc(33.33% - 2rem);
   padding: 2.8rem;
   background-color: $color-white;
+  &:nth-of-type(n + 4) {
+    margin-top: 3rem;
+  }
+  @include portrait {
+    width: calc(50% - 1rem);
+    padding: 1.5rem;
+    &:nth-of-type(n + 3) {
+      margin-top: 2rem;
+    }
+  }
+  @include mobile-lg {
+    width: 100%;
+    &:nth-of-type(n + 2) {
+      margin-top: 2rem;
+    }
+  }
   &__heading {
     margin-bottom: 1.2rem;
   }
