@@ -2,6 +2,9 @@
   @include wrapper;
   padding-top: 2.3rem;
   padding-bottom: 2.3rem;
+  @include tablet {
+    text-align: center;
+  }
   img {
     width: 16rem;
   }
