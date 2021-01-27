@@ -10,6 +10,11 @@ html {
 body {
   font-family: $base-font;
   font-size: $base-font-size;
+  line-height: $base-line-height;
+  @include mobile-lg {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
 }
 h1,
 h2,
@@ -46,7 +51,4 @@ h3 {
 }
 p {
   margin-bottom: 4rem;
-  @include mobile-lg {
-    font-size: 1.4rem;
-  }
 }
