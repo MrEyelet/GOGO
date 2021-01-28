@@ -8,8 +8,8 @@ class Slider {
 
   runSlider() {
     const mySwiper = new Swiper(".swiper-container", {
-      direction: "horizontal",
-      loop: true,
+      // direction: "horizontal",
+      // loop: true,
       // slidesPerView: 3,
       spaceBetween: 30,
       navigation: {
