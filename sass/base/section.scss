@@ -1,22 +1,33 @@
 .section {
   @include wrapper;
   padding-top: 5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 6.5rem;
   text-align: center;
   &__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    .box {
+      &:nth-of-type(n + 4) {
+        margin-top: 3rem;
+      }
+      // &:nth-of-type(3n + 2),
+      // &:nth-of-type(3n + 3) {
+      //   margin-left: 3rem;
+      // }
+      @include portrait {
+        width: calc(50% - 1rem);
+        padding: 1.5rem;
+        &:nth-of-type(n + 3) {
+          margin-top: 2rem;
+        }
+      }
+      @include mobile-lg {
+        width: 100%;
+        &:nth-of-type(n + 2) {
+          margin-top: 2rem;
+        }
+      }
+    }
   }
-  // &__heading-1,
-  // &__desc {
-  //   max-width: 68.5rem;
-  //   width: 100%;
-  //   margin: 0 auto;
-  // }
-  // &__heading-2 {
-  //   max-width: 50rem;
-  //   width: 100%;
-  //   margin: 0 auto;
-  // }
 }

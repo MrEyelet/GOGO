@@ -7,10 +7,8 @@ class Slider {
   }
 
   runSlider() {
-    const mySwiper = new Swiper(".swiper-container", {
-      // direction: "horizontal",
+    const mySwiper = new Swiper(".slider__container", {
       loop: true,
-      // slidesPerView: 3,
       spaceBetween: 20,
       navigation: {
         nextEl: ".swiper-button-next",
