@@ -9,8 +9,11 @@
     transform: translate(-50%, -50%);
     @include tablet {
       top: unset;
-      bottom: -5rem;
+      bottom: -7.5rem;
     }
+  }
+  .swiper-slide {
+    height: auto;
   }
   .swiper-button-prev,
   .swiper-button-next {
