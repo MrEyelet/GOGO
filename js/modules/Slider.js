@@ -1,32 +1,33 @@
-import Swiper from "swiper/bundle"
-import "swiper/swiper-bundle.css"
+import $ from "jquery"
+import slick from "slick-carousel"
 
 class Slider {
   constructor() {
-    this.runSlider()
+    this.slider = $(".slider")
+    this.initSlider()
   }
 
-  runSlider() {
-    const mySwiper = new Swiper(".slider__container", {
-      loop: true,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-      breakpoints: {
-        320: {
-          slidesPerView: 1
+  initSlider() {
+    this.slider.slick({
+      autoplay: false,
+      slidesToShow: 3,
+      arrows: true,
+      prevArrow: "<button class='slick-arrow-prev' type='button'><img src='img/prev_arrow.svg'></button>",
+      nextArrow: "<button class='slick-arrow-next' type='button'><img src='img/next_arrow.svg'></button>",
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2
+          }
         },
-        480: {
-          slidesPerView: 2
-          // spaceBetween: 20
-        },
-        768: {
-          slidesPerView: 3
-          // spaceBetween: 20
+        {
+          breakpoint: 481,
+          settings: {
+            slidesToShow: 1
+          }
         }
-      }
+      ]
     })
   }
 }
